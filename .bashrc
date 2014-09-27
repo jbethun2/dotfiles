@@ -45,10 +45,3 @@ PS1=${green}${USER}${white}'@'${yellow}`hostname -s`${white}' $PWD > ${nl}$ '
 # General application aliases
 alias view="vim -R "
 
-# SSH aliases
-alias eggateway="ssh eggw01p.prod.orbitz.net"
-alias wmgateway="ssh wmgw01p.prod.orbitz.net"
-alias egpromo="ssh egpromo01p.prod.orbitz.net"
-alias wmpromo="ssh wmpromo01p"
-alias socdev="ssh soc01p"
-alias workstation="ssh 10.222.140.68"
