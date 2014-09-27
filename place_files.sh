@@ -8,5 +8,6 @@ cp ${PWD}/.bashrc ${HOME}/.bashrc
 cp ${PWD}/.bash_profile ${HOME}/.bash_profile
 cp ${PWD}/.tmux.conf ${HOME}/.tmux.conf
 cp ${PWD}/.ssh/config ${HOME}/.ssh/config
+chmod 600 ${HOME}/.ssh/config
 
 echo "Setup complete."
