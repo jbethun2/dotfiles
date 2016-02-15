@@ -1,5 +1,5 @@
 # jbethune - .bashrc 
-# modified 01/04/2013
+# modified 02/14/2016
 
 #####
 #
@@ -44,4 +44,18 @@ PS1=${green}${USER}${white}'@'${yellow}`hostname -s`${white}' $PWD > ${nl}$ '
 #####
 # General application aliases
 alias view="vim -R "
+os_string=$(uname)
+if [[ $os_string == 'Darwin' ]]; then
+    alias ls='ls -FG'
+elif [[ $os_string == 'Linux' ]]; then
+    alias ls='ls -F --color=auto'
+fi
 
+#####
+#
+# Golang
+#
+#####
+export GOPATH=$HOME/golang
+
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
